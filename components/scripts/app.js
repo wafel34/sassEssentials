@@ -2,5 +2,5 @@
 var $ = require('jquery');
 
 $(function () {
-    
+  
 });

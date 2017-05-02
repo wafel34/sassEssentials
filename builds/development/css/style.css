@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Roboto+Slab");
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #EEE8D6;
+  color: #022933;
+  margin: 0;
+  padding: 0;
+  font-size: 1.8em;
+  font-family: "Roboto Slab", "Helvetica", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #D14348; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzdHlsZS5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoXCJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9QnJlZStTZXJpZnxSb2JvdG8rU2xhYlwiKTtcbmh0bWwge1xuICBmb250LXNpemU6IDYyLjUlOyB9XG5cbmJvZHkge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjRUVFOEQ2O1xuICBjb2xvcjogIzAyMjkzMztcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwO1xuICBmb250LXNpemU6IDEuOGVtO1xuICBmb250LWZhbWlseTogXCJSb2JvdG8gU2xhYlwiLCBcIkhlbHZldGljYVwiLCBzYW5zLXNlcmlmOyB9XG5cbmgxLCBoMiwgaDMsIGg0LCBoNSwgaDYge1xuICBjb2xvcjogI0QxNDM0ODsgfVxuXG4uY29udGFpbmVyIHtcbiAgd2lkdGg6IDgwJTtcbiAgbWFyZ2luOiAwIGF1dG87IH1cbiJdLCJmaWxlIjoic3R5bGUuY3NzIn0= */
