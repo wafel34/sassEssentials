@@ -39,7 +39,7 @@ if (env === 'development') {
 }
 
 jsSources    = 'components/scripts/*.js';
-sassSources  = 'components/sass/**/*.sass';
+sassSources  = 'components/sass/**/style.sass';
 htmlSources  = 'builds/development/*.html';
 
 var onError = function (err) {
@@ -117,7 +117,8 @@ gulp.task('images', function () {
 
 gulp.task('watch', function () {
     gulp.watch(jsSources, ['js']);
-    gulp.watch(sassSources, ['sass']);
+    gulp.watch('components/sass/**/*.sass', ['sass']);
+    gulp.watch('components/sass/**/*.scss', ['sass']);
     gulp.watch('builds/development/*.html', ['minifyHTML']);
     gulp.watch('builds/development/images/**/*.*', ['images']);
     gulp.watch('builds/development/*.html').on('change', browserSync.reload);
