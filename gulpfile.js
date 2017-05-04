@@ -64,11 +64,13 @@ gulp.task('sass', function () {
             .pipe(plumber({
               errorHandler: onError
             }))
-            .pipe(sass())
-            .pipe(autoprefixer())
             .pipe(sourcemaps.init())
-            .pipe(gulpIf(env === 'production', minifyCss()))
+            .pipe(sass())
             .pipe(sourcemaps.write())
+            .pipe(sourcemaps.init({loadMaps: true}))
+            .pipe(autoprefixer())
+            .pipe(sourcemaps.write())
+            .pipe(gulpIf(env === 'production', minifyCss()))
             .pipe(gulp.dest(outputDir + '/css'))
             .pipe(browserSync.stream())
 });
