@@ -9,18 +9,28 @@
   list-style-type: none
 
   .item
-    margin-bottom: 20px
+    padding-bottom: 10px
+    padding-left: 10px
     border-top: 1px dotted $yellow
+    transition: all .5s
+    @include clearfix
+    &:hover
+      background: $yellow
+
+    &:last-of-type
+      border-bottom: 1px dotted $color-media-head
 
   .head
     margin: 0
     padding: 0
     color: $color-media-head
     font-size: 2em
+    #typography &
+      color: $red
 
   p
     margin: 0
-    font-size: 1.5em
+    font-size: .5em
 
   img
     float: left
