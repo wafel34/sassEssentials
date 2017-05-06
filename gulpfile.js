@@ -64,10 +64,8 @@ gulp.task('sass', function () {
             .pipe(plumber({
               errorHandler: onError
             }))
-            .pipe(sourcemaps.init())
-            .pipe(sass())
-            .pipe(sourcemaps.write())
             .pipe(sourcemaps.init({loadMaps: true}))
+            .pipe(sass())
             .pipe(autoprefixer())
             .pipe(sourcemaps.write())
             .pipe(gulpIf(env === 'production', minifyCss()))

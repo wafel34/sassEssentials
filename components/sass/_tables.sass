@@ -1,0 +1,39 @@
+.table
+    font-sieze: 1.5em
+    text-align: left
+    width: 100%
+    color: $darkblue
+    border-collapse: collapse
+    
+    caption
+        font-size: 2.5rem
+        text-align: left
+        padding-bottom: 5px
+    
+    >thead,
+    >tbody,
+    >tfoot,
+        >tr
+            >th,
+            >td
+                padding: 10px
+                border-bottom: 1px dotted $blue
+    >thead >tr
+        background-color: $blue
+        color: $color-backgrounds
+        transition: all .5s
+        &:hover
+            background-color: complement($blue)
+        >th
+            border-bottom: none
+    
+    >tbody
+        >tr
+            &:nth-child(odd)
+                &:hover
+                    background-color: transparentize($color-backgrounds, .8)
+            &:nth-child(even)
+                background-color: transparentize($yellow, .5)
+                &:hover
+                    background-color: transparentize($yellow, .2)
+            

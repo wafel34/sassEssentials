@@ -31,3 +31,14 @@ $color-btn-cool: $blue
 
 .btn-awesome
   @extend %btn
+    
+
+.grid
+    @include clearfix
+    .item
+        float: left
+        @include imgGrid(4, 2%)
+    img
+        display: block
+        border-radius: 5px
+        max-width: 100%
