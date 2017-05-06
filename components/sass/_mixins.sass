@@ -21,3 +21,7 @@
     &:nth-child(#{$qty}n)
         margin-right: 0
         margin-bottom: 0
+    
+@mixin break($length)
+    @media (min-width: $length)
+        @content
