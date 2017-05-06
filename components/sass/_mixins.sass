@@ -22,6 +22,10 @@
         margin-right: 0
         margin-bottom: 0
     
-@mixin break($length)
-    @media (min-width: $length)
-        @content
+@mixin break($args...)
+    @if length($args) == 1
+        @media (min-width: nth($args, 1))
+            @content
+    @if length($args) == 2
+        @media (min-width: nth($args, 1)) and (max-width: nth($args, 2))
+            @content
